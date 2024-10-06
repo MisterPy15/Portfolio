@@ -173,10 +173,10 @@ function tronquerTexte(texte, longueurMax) {
   detailsProjet1.innerHTML = tronquerTexte(detailsProjet1.innerHTML, 200);
 
   var detailsProjet2 = document.getElementById("project2");
-  detailsProjet2.innerHTML = tronquerTexte(detailsProjet2.innerHTML, 200);
+  detailsProjet2.innerHTML = tronquerTexte(detailsProjet2.innerHTML, 250);
 
   var detailsProjet3 = document.getElementById("project3");
-  detailsProjet3.innerHTML = tronquerTexte(detailsProjet3.innerHTML, 200);
+  detailsProjet3.innerHTML = tronquerTexte(detailsProjet3.innerHTML, 250);
 
 
   var detailsProjet4 = document.getElementById("project4");
@@ -188,12 +188,14 @@ function tronquerTexte(texte, longueurMax) {
 
 
   var detailsProjet6 = document.getElementById("project6");
-  detailsProjet6.innerHTML = tronquerTexte(detailsProjet6.innerHTML, 200);
+  detailsProjet6.innerHTML = tronquerTexte(detailsProjet6.innerHTML, 300);
 
 
-  var detailsProjet6 = document.getElementById("project7");
-  detailsProjet6.innerHTML = tronquerTexte(detailsProjet6.innerHTML, 200);
-
+  var detailsProjet7 = document.getElementById("project7");
+  detailsProjet7.innerHTML = tronquerTexte(detailsProjet7.innerHTML, 300);
+  
+  var detailsProjet8 = document.getElementById("project8");
+  detailsProjet8.innerHTML = tronquerTexte(detailsProjet8.innerHTML, 300);
 
 
 

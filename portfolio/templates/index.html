@@ -259,12 +259,26 @@
 
 
                         <div class="project-box" onclick=" afficherDetailsProjet('project7')">
-                            <img src="../static/images/Projet 7.jpeg" alt="Project 7">
+                            <img src="../static/images/Projet 7.png" alt="Project 7">
                             <div class="project-overlay"></div>
                             <div class="project-details" id="project7">
                                 <h3>Gesion bibliothèques</h3>
                                 <p>Développement d'un Logiciel de Gestion d'une Bibliothèque principalement développer en Java</p>
                             </div>
+                        </div>
+
+                        <div class="project-box" onclick=" afficherDetailsProjet('project8')">
+                            <img src="../static/images/Projet 8.png" alt="Project 8">
+                            <div class="project-overlay"></div>
+                            <div class="project-details" id="project8">
+                                <h3>Whatsapp Cloning</h3>
+                                <p>Un Projet dont j'ai eu a clonner reproduire l'appliction Whatsapp en utilisant le framework flet 
+                                    ce projet Qui m'a permis d'explorer en profondeur ce nouveau framework python</p>
+                            </div>
+                        </div>
+
+                        <div class="autre">
+                            <h1>Et bien d'autres projets...</h1>
                         </div>
 
 
@@ -289,19 +303,29 @@
                         
                         </div>
                         <div class="col">
+                            
+                            {% if messages%}
+
+                                <ul class="messages">
+                                    {% for message in messages%}
+                                    
+                                    <li class="{{ message.tags }} ">{{ message }}</li>    
+
+                                    {% endfor%}
+                                </ul>
+                            
+                            {%endif%}
+
+
                             <form action="" method="post" class="form-control">
                                 {%csrf_token%}
                                 <div class="form-inputs">
                                     
                                     {{form.name}}
                                     {{form.email}}
-
-                                    <!-- <input type="text" class="input-field" placeholder="Name">
-                                    <input type="text" class="input-field" placeholder="Email"> -->
                                 </div>
                                 <div class="text-area">
                                     {{form.message}}
-                                    <!-- <textarea placeholder="Message"></textarea> -->
                                 </div>
                                 <div class="form-button">
                                     <button class="btn">Envoyer <i class="uil uil-message"></i></button>
