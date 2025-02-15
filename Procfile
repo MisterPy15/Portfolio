@@ -1,0 +1,1 @@
+web: gunicorn Prtfolio_Py.wsgi:application
