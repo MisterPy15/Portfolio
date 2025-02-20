@@ -29,9 +29,6 @@ document.querySelectorAll('a').forEach(links =>{
 
 
 
-
-
-
 /*================= BARRE DE NAVIGATION ======================== */
 function myMenuFunction(){
   var menuBtn = document.getElementById("ma_nav_menu");
@@ -69,9 +66,9 @@ function headerShadow() {
 
 /* ----- EFFET DE FRAPPE ----- */
 var EffetDeFrappe = new Typed(".typedText",{
-  strings : ["Étudiant","Développeur"],
+  strings : ["Étudiant","Développeur", "Assistant DBA"],
   loop : true,
-  typeSpeed : 80, 
+  typeSpeed : 80,
   backSpeed : 80,
   backDelay : 2000
 });
@@ -83,8 +80,9 @@ const sr = ScrollReveal({
       origin: 'top',
       distance: '80px',
       duration: 2000,
-      reset: true     
+      reset: true    
 })
+
 
 
 /* -- HOME -- */
@@ -100,6 +98,7 @@ sr.reveal('.featured-image',{delay: 300})
 /* -- SECTION PROJET -- */
 // Pour l'apparition fluide des éléments
 sr.reveal('.project-box',{interval: 200})
+sr.reveal('.Certif-box',{interval: 200})
 
 /* -- HEADER -- */
 sr.reveal('.top-header',{})

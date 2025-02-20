@@ -423,13 +423,17 @@ h3{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: calc(50% - 10px); /* Prend en compte deux projets par ligne avec un espace de 20px */
-    height: 250px;
+    width: calc(60% - 2px); /* Prend en compte deux projets par ligne avec un espace de 20px */
+    height: 350px;
     background: var(--color-white);
     border-radius: 20px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
 }
+
+
+
+
 
 .project-overlay {
     position: absolute;
