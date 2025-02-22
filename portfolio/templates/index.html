@@ -44,12 +44,6 @@
                             <a href="#projects" class="nav-link">Projets</a>
                             <div class="circle"></div>
                         </li>
-
-                        <li class="nav_list">
-                            <a href="#certif" class="nav-link">Certifications</a>
-                            <div class="circle"></div>
-                        </li>
-
                         <li class="nav_list">
                             <a href="#contact" class="nav-link">Contacte</a>
                             <div class="circle"></div>
@@ -81,7 +75,7 @@
                             <p>Je suis <span class="typedText"></span></p>
                         </div>
                         <div class="description">
-                            <p>Je suis un étudiant en Informatique Génie Logiciel à l'Université de Technologie d'Abidjan. En tant qu'ingénieur logiciel, ma passion pour les technologies innovantes ne cesse de croître et de m'inspirer.</p>
+                            <p>Je suis un étudiant en Informatique spécialisé en Génie Logiciel à l'Université de Technologie d'Abidjan. En tant qu'ingénieur logiciel, ma passion pour les technologies innovantes ne cesse de croître et de m'inspirer.</p>
                         </div>
                         <div class="featured-text-btn">
                             <button class="btn blue-btn">Recrutez-moi</button>
@@ -108,7 +102,7 @@
                     </div>
                     <div class="featured-image">
                         <div class="image">
-                            <img src="../static/images/Profile F.jpeg" alt="Agoh Chris">
+                            <img src="../static/images/Pr2.jpeg" alt="Agoh Chris">
                         </div>
                     </div>
                     <div class="scroll-icon-box">
@@ -265,58 +259,13 @@
 
 
                         <div class="project-box" onclick=" afficherDetailsProjet('project7')">
-                            <img src="../static/images/Projet 7.png" alt="Project 7">
+                            <img src="../static/images/Projet 7.jpeg" alt="Project 7">
                             <div class="project-overlay"></div>
                             <div class="project-details" id="project7">
                                 <h3>Gesion bibliothèques</h3>
                                 <p>Développement d'un Logiciel de Gestion d'une Bibliothèque principalement développer en Java</p>
                             </div>
                         </div>
-
-                        <div class="project-box" onclick=" afficherDetailsProjet('project8')">
-                            <img src="../static/images/Projet 8.png" alt="Project 8">
-                            <div class="project-overlay"></div>
-                            <div class="project-details" id="project8">
-                                <h3>Whatsapp Cloning</h3>
-                                <p>Un Projet dont j'ai eu a clonner reproduire l'appliction Whatsapp en utilisant le framework flet 
-                                    ce projet Qui m'a permis d'explorer en profondeur ce nouveau framework python</p>
-                            </div>
-                        </div>
-
-                        <div class="autre">
-                            <h1>Et bien d'autres projets...</h1>
-                        </div>
-
-
-
-
-                    </div>
-                </section>
-
-
-                <!------------------- SECTION CERTIFICATION -------------->
-
-                <section class="section" id="certif">
-                    <div class="top-header">
-                        <h1>CERTIFICATIONS</h1>
-                    </div>
-                    <div class="project-container">
-                        <!--                            <img src="../static/images/Certif Python.png" alt="Project 1" width="500px">
- -->
-                        <div class="project-box Certif-box" onclick=" afficherDetailsProjet('project1')">
-                            <img src="../static/images/Certif Python.png" alt="Project 1" width="500px">
-                            <div class="project-overlay"></div>
-                            <div class="project-details" id="project1">
-
-                                <!-- <h3>PyStore</h3>
-                                <p>PyStore est un site E-commerce que J'ai développer Au cour 
-                                    de ma première Année d'expérience en Génie Logiciel. Elle Incluait
-                                    le technolgie HTML Css et Js 
-                                </p> -->
-                            </div>
-                        </div>
-
-                            
 
 
 
@@ -340,29 +289,19 @@
                         
                         </div>
                         <div class="col">
-                            
-                            {% if messages%}
-
-                                <ul class="messages">
-                                    {% for message in messages%}
-                                    
-                                    <li class="{{ message.tags }} ">{{ message }}</li>    
-
-                                    {% endfor%}
-                                </ul>
-                            
-                            {%endif%}
-
-
                             <form action="" method="post" class="form-control">
                                 {%csrf_token%}
                                 <div class="form-inputs">
                                     
                                     {{form.name}}
                                     {{form.email}}
+
+                                    <!-- <input type="text" class="input-field" placeholder="Name">
+                                    <input type="text" class="input-field" placeholder="Email"> -->
                                 </div>
                                 <div class="text-area">
                                     {{form.message}}
+                                    <!-- <textarea placeholder="Message"></textarea> -->
                                 </div>
                                 <div class="form-button">
                                     <button class="btn">Envoyer <i class="uil uil-message"></i></button>
@@ -433,8 +372,7 @@
 
 
 
-    <!-- <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> -->
-     <script src="../static/js/defilement.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
        <!-- ----- SCROLL Dynamique----- -->
     <script src="https://unpkg.com/scrollreveal"></script>

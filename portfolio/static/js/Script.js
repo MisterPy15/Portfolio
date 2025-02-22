@@ -29,6 +29,9 @@ document.querySelectorAll('a').forEach(links =>{
 
 
 
+
+
+
 /*================= BARRE DE NAVIGATION ======================== */
 function myMenuFunction(){
   var menuBtn = document.getElementById("ma_nav_menu");
@@ -66,9 +69,9 @@ function headerShadow() {
 
 /* ----- EFFET DE FRAPPE ----- */
 var EffetDeFrappe = new Typed(".typedText",{
-  strings : ["Étudiant","Développeur", "Assistant DBA"],
+  strings : ["Génie Logiciel","Développeur"],
   loop : true,
-  typeSpeed : 80,
+  typeSpeed : 80, 
   backSpeed : 80,
   backDelay : 2000
 });
@@ -80,9 +83,8 @@ const sr = ScrollReveal({
       origin: 'top',
       distance: '80px',
       duration: 2000,
-      reset: true    
+      reset: true     
 })
-
 
 
 /* -- HOME -- */
@@ -98,7 +100,6 @@ sr.reveal('.featured-image',{delay: 300})
 /* -- SECTION PROJET -- */
 // Pour l'apparition fluide des éléments
 sr.reveal('.project-box',{interval: 200})
-sr.reveal('.Certif-box',{interval: 200})
 
 /* -- HEADER -- */
 sr.reveal('.top-header',{})
@@ -172,10 +173,10 @@ function tronquerTexte(texte, longueurMax) {
   detailsProjet1.innerHTML = tronquerTexte(detailsProjet1.innerHTML, 200);
 
   var detailsProjet2 = document.getElementById("project2");
-  detailsProjet2.innerHTML = tronquerTexte(detailsProjet2.innerHTML, 250);
+  detailsProjet2.innerHTML = tronquerTexte(detailsProjet2.innerHTML, 200);
 
   var detailsProjet3 = document.getElementById("project3");
-  detailsProjet3.innerHTML = tronquerTexte(detailsProjet3.innerHTML, 250);
+  detailsProjet3.innerHTML = tronquerTexte(detailsProjet3.innerHTML, 200);
 
 
   var detailsProjet4 = document.getElementById("project4");
@@ -187,14 +188,12 @@ function tronquerTexte(texte, longueurMax) {
 
 
   var detailsProjet6 = document.getElementById("project6");
-  detailsProjet6.innerHTML = tronquerTexte(detailsProjet6.innerHTML, 300);
+  detailsProjet6.innerHTML = tronquerTexte(detailsProjet6.innerHTML, 200);
 
 
-  var detailsProjet7 = document.getElementById("project7");
-  detailsProjet7.innerHTML = tronquerTexte(detailsProjet7.innerHTML, 300);
-  
-  var detailsProjet8 = document.getElementById("project8");
-  detailsProjet8.innerHTML = tronquerTexte(detailsProjet8.innerHTML, 300);
+  var detailsProjet6 = document.getElementById("project7");
+  detailsProjet6.innerHTML = tronquerTexte(detailsProjet6.innerHTML, 200);
+
 
 
 
